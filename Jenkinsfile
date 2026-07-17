@@ -45,7 +45,7 @@ pipeline {
 
                     sh '''
                         echo "Vipin@161999" | docker login -u "vipinvs1" --password-stdin
-                        docker push $DOCKERHUB_USERNAME/$IMAGE_NAME:$IMAGE_TAG
+                        docker push vipinvs1/python-inventory-api:$IMAGE_TAG
                     '''
                 }
             }
