@@ -44,7 +44,7 @@ pipeline {
                 ]) {
 
                     sh '''
-                        echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
+                        echo "Vipin@161999" | docker login -u "vipinvs1" --password-stdin
                         docker push $DOCKERHUB_USERNAME/$IMAGE_NAME:$IMAGE_TAG
                     '''
                 }
